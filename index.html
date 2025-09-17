@@ -45,22 +45,23 @@
             </ul>
         </div>
     </nav>
+    
     <canvas id="matrix-bg"></canvas>
     <!-- Main Content -->
     <div id="content" class="container px-5 px-lg-5">
         <!-- Home -->
         <div id="home" class="min-vh-100 d-flex justify-content-center align-items-center flex-column">
-            <h1 id="text-typewriter" class="text-center"></h1>
-            <h2 class="text-center fade-in-up text-intro">Your average nerd</h2>
+            <h1 id="text-typewriter" class="text-center mb-0"></h1>
+            <h2 class="text-center fade-in-up text-intro mb-0">Your average nerd</h2>
             <p class="text-center fade-in-up text-intro">I'm Olivier Renson, a passionate developer and tech enthusiast.</p>
-            <a class="btn d-flex align-items-center justify-content-center gap-2 fade-in-up hi" href="mailto:oli.renson@hotmail.com" role="button">
+            <a class="btn d-flex align-items-center justify-content-center gap-2 fade-in-up hi" href="mailto:oli.renson@hotmail.com" role="button" onclick="event.stopPropagation();">
                 <i class="bi bi-envelope-fill hi-icon"></i>
                 <span>Say hi!</span>
             </a>
         </div>
 
         <!-- About Me -->
-        <div id="about" class="my-5">
+        <div id="about" class="mt-5 mb-end-section">
             <div class="d-flex align-items-center gap-3 mb-4">
                 <h2>/ about me</h2>
                 <hr class="w-25">
@@ -108,7 +109,7 @@
         </div>
 
         <!-- experience -->
-        <div id="experience" class="my-5">
+        <div id="experience" class="mt-5 mb-end-section">
             <div class="d-flex align-items-center gap-3">
                 <h2>/ experiences</h2>
                 <hr class="w-25">
@@ -117,7 +118,7 @@
         </div>
 
         <!-- Projects -->
-        <div id="projects" class="my-5">
+        <div id="projects" class="mt-5 mb-end-section">
             <div class="d-flex align-items-center gap-3">
                 <h2>/ projects</h2>
                 <hr class="w-25">
@@ -126,7 +127,7 @@
         </div>
 
         <!-- Contact -->
-        <div id="contact" class="my-5">
+        <div id="contact" class="mt-5 mb-end-section">
             <div class="d-flex align-items-center gap-3">
                 <h2>/ contact</h2>
                 <hr class="w-25">
@@ -136,8 +137,13 @@
 
     </div>
 
+    <footer class="matrix-hint text-center">
+        <small>Click home to <span class="green">enter the matrix</span></small>
+    </footer>
+
     <style>@import url(https://fonts.googleapis.com/css2?family=Space+Mono&display=swap);</style>
     <style>@import url(https://fonts.googleapis.com/css2?family=NTR&display=swap);</style>
+    <style>@import url(https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap);</style>">
     <script src="assets/js/global.js"></script>
 
     <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet">

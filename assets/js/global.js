@@ -2,8 +2,8 @@ document.addEventListener("DOMContentLoaded", function() {
   // Define text parts
   const parts = [
     { text: "Hi, ", class: "" }, // normal part
-    { text: "Olivier ", class: "green" },        // green part
-    { text: "here.", class: "" } // normal part
+    { text: "Olivier", class: "green" },        // green part
+    { text: " here.", class: "" } // normal part
   ];
 
   const target = document.getElementById("text-typewriter");
@@ -57,6 +57,7 @@ document.addEventListener("DOMContentLoaded", function() {
         this.chars = chars;
         this.bg = bg;
         this.fg = fg;
+        this.running = false;
 
         // Setting up the canvas
         const canvas = document.getElementById("matrix-bg");
@@ -79,6 +80,11 @@ document.addEventListener("DOMContentLoaded", function() {
         }
 
         window.addEventListener("resize", () => this.resizeCanvas());
+        home.addEventListener("click", () => {
+          this.running = !this.running;
+          if (this.running) this.play();
+          else this.clearTotalCanvas();
+        });
       }
 
       resizeCanvas() {
@@ -127,6 +133,11 @@ document.addEventListener("DOMContentLoaded", function() {
         this.context.globalAlpha = 1;
       }
 
+      clearTotalCanvas() {
+        this.context.fillStyle = this.bg;
+        this.context.fillRect(0, 0, ...this.size);
+      }
+
       drawFadeIn() {
       const fadeHeight = 100;
       const fadeStart = 0;
@@ -153,6 +164,8 @@ document.addEventListener("DOMContentLoaded", function() {
       }
 
       play() {
+        if (!this.running) return;
+
         this.clearCanvas();
         this.drawParticles();
         this.updateParticles();
@@ -162,7 +175,7 @@ document.addEventListener("DOMContentLoaded", function() {
       }
     }
 
-    const chars = "ABCDEFGHIJKLMNOPRSTUVWXYZ";
+    const chars = "ABCDEFGHIJKLMNOPRSTUVWXYZ()[]{}<>0123456789@#$%^&*+-=_~";
     const rain = new RainChar("monospace", 20, chars, "rgb(10,25,47)", "rgba(100,255,219,0.2)");
     rain.play();
   }
