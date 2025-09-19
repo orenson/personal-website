@@ -180,4 +180,76 @@ document.addEventListener("DOMContentLoaded", function() {
     rain.play();
   }
 
+
+
+  function moveIndicator(indic, el) {
+    indic.style.top = el.offsetTop + "px";
+    indic.style.height = el.offsetHeight + "px";
+  }
+  
+  const active = document.querySelectorAll('.list-exp .list-group-item.active');
+  for (const i of active) {
+    indic = i.closest('.list-exp').querySelector('.indicator');
+    moveIndicator(indic, i);
+  }
+  
+  window.addEventListener("resize", () => {
+    const active = document.querySelectorALL('.list-exp .list-group-item.active');
+    for (const i of active) {
+      indic = i.closest('.list-exp').querySelector('.indicator');
+      moveIndicator(indic, i);
+    }
+  });
+
+  document.querySelectorAll('.list-exp .list-group-item').forEach(item => {
+    item.addEventListener('click', function (e) {
+      
+      const indic = this.closest('.list-exp').querySelector('.indicator');
+      moveIndicator(indic, item);
+
+      const rect = this.getBoundingClientRect();
+      const ripple = document.createElement("span");
+      ripple.classList.add("ripple");
+
+      // size of the ripple = max dimension of item
+      const size = Math.max(rect.width, rect.height);
+      ripple.style.width = ripple.style.height = size + "px";
+      ripple.style.left = (e.clientX - rect.left - size / 2) + "px";
+      ripple.style.top = (e.clientY - rect.top - size / 2) + "px";
+
+      // append ripple to the clicked item & remove after animation
+      this.appendChild(ripple);
+      ripple.addEventListener("animationend", () => {
+        ripple.remove();
+      });
+
+    });
+  });
+
+
+
+  const collapseMaster = document.getElementById('collapse-master');
+  const triggerLinkMaster = document.getElementById('collapse-master-link');
+  const linkTextMaster = triggerLinkMaster.querySelector('.collapse-link-text');
+
+  collapseMaster.addEventListener('show.bs.collapse', () => {
+    linkTextMaster.textContent = 'Collapse';
+  });
+
+  collapseMaster.addEventListener('hide.bs.collapse', () => {
+    linkTextMaster.textContent = 'Lectures & grades';
+  });
+
+  const collapseBac = document.getElementById('collapse-bac');
+  const triggerLinkBac = document.getElementById('collapse-bac-link');
+  const linkTextBac = triggerLinkBac.querySelector('.collapse-link-text');
+
+  collapseBac.addEventListener('show.bs.collapse', () => {
+    linkTextBac.textContent = 'Collapse';
+  });
+
+  collapseBac.addEventListener('hide.bs.collapse', () => {
+    linkTextBac.textContent = 'Expand';
+  });
+
 });

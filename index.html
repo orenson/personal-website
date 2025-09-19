@@ -18,8 +18,8 @@
                 <li class="nav-item d-none d-md-block"><a class="nav-link" aria-current="page" href="#">Home</a></li>
                 <li class="nav-item d-none d-md-block"><a class="nav-link" href="#about">About</a></li>
                 <li class="nav-item d-none d-md-block"><a class="nav-link" href="#experiences">Experiences</a></li>
+                <li class="nav-item d-none d-md-block"><a class="nav-link" href="#studies">Qualifications</a></li>
                 <li class="nav-item d-none d-md-block"><a class="nav-link" href="#projects">Projects</a></li>
-                <li class="nav-item d-none d-md-block"><a class="nav-link" href="#contact">Contact</a></li>
             </ul>
             <ul class="navbar-nav align-items-center ms-auto">
                 <li class="nav-item">
@@ -38,7 +38,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#" target="_blank">
+                    <a class="nav-link" href="https://www.strava.com/athletes/66369470" target="_blank">
                     <i class="bi bi-strava nav-icon"></i>
                     </a>
                 </li>
@@ -48,7 +48,7 @@
     
     <canvas id="matrix-bg"></canvas>
     <!-- Main Content -->
-    <div id="content" class="container px-5 px-lg-5">
+    <div id="content" class="container-lg px-5 px-lg-5">
         <!-- Home -->
         <div id="home" class="min-vh-100 d-flex justify-content-center align-items-center flex-column">
             <h1 id="text-typewriter" class="text-center mb-0"></h1>
@@ -79,14 +79,14 @@
                     <p>Here are some technologies I have been working with:</p>
                     <div class="row mb-3">
                         <div class="col-6">
-                            <ul class="tech-list mb-0">
+                            <ul class="green-caret-list mb-0">
                             <li data-aos="fade-up-short" data-aos-offset="50" data-aos-delay="200">Python</li>
                             <li data-aos="fade-up-short" data-aos-offset="50" data-aos-delay="400">Bash</li>
                             <li data-aos="fade-up-short" data-aos-offset="50" data-aos-delay="600">R</li>
                             </ul>
                         </div>
                         <div class="col-6">
-                            <ul class="tech-list mb-0">
+                            <ul class="green-caret-list mb-0">
                             <li data-aos="fade-up-short" data-aos-offset="50" data-aos-delay="200">Django</li>
                             <li data-aos="fade-up-short" data-aos-offset="50" data-aos-delay="400">Nextflow</li>
                             <li data-aos="fade-up-short" data-aos-offset="50" data-aos-delay="600">Docker & Kubernetes</li>
@@ -110,26 +110,268 @@
 
         <!-- experience -->
         <div id="experience" class="mt-5 mb-end-section">
-            <div class="d-flex align-items-center gap-3">
+            <div class="d-flex align-items-center gap-3 mb-4">
                 <h2>/ experiences</h2>
                 <hr class="w-25">
             </div>
-            <p>In progress ...</p>
+            <div class="d-md-flex gap-5">
+                <div class="list-group list-exp" id="list-tab-exp" role="tablist">
+                    <a class="list-group-item list-group-item-action active"data-bs-toggle="list" href="#list-giga" role="tab" aria-controls="list-giga">GIGA ULIEGE</a>
+                    <a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-defense" role="tab" aria-controls="list-defense">DEFENSE</a>
+                    <a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-lisa" role="tab" aria-controls="list-lisa">LISA</a>
+                    <a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-chu" role="tab" aria-controls="list-chu">CHU LIEGE</a>
+                    <div id="indicator-exp" class="indicator"></div>
+                </div>
+                <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="list-giga" role="tabpanel">
+                        <h3>Bioinformatics Research Assistant @ <a href="https://www.giga.uliege.be/" class="green exp-title-link" target="_blank">GIGA - University of Liege</a></h3>
+                        <p class="">OCT 2021 - NOW</p>
+                        <ul class="green-caret-list ps-0">
+                            <li class="fade-in-up" style="animation-delay: 0s;">Developed and maintained bioinformatics pipelines for genomic and medical imaging data analysis using Python, R, and Nextflow. Developed and maintained bioinformatics pipelines for genomic and medical imaging data analysis using Python, R, and Nextflow.</li>
+                            <li class="fade-in-up" style="animation-delay: 0.2s;">Collaborated with interdisciplinary teams to integrate computational methods into biological research projects.</li>
+                            <li class="fade-in-up" style="animation-delay: 0.4s;">Optimized data processing workflows to enhance efficiency and reproducibility.</li>
+                        </ul>
+                        <a class="icon-link icon-link-hover gallery-link" data-bs-toggle="modal" data-bs-target="#galleryModal-giga">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-camera" viewBox="0 0 16 16">
+                                <path d="M15 12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h1.172a3 3 0 0 0 2.12-.879l.83-.828A1 1 0 0 1 6.827 3h2.344a1 1 0 0 1 .707.293l.828.828A3 3 0 0 0 12.828 5H14a1 1 0 0 1 1 1zM2 4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-1.172a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 9.172 2H6.828a2 2 0 0 0-1.414.586l-.828.828A2 2 0 0 1 3.172 4z"/>
+                                <path d="M8 11a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5m0 1a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7M3 6.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0"/>
+                            </svg>
+                            Gallery
+                        </a>
+                    </div>
+                    <div class="tab-pane fade" id="list-defense" role="tabpanel">
+                        <h3>Cybersecurity Trainee @ <a href="https://www.mil.be/fr/a-propos-de-la-defense/force-cyber/" class="green exp-title-link" target="_blank">Belgian Cyber Command - Defense</a></h3>
+                        <p class="">JUN 2024 - AUG 2024</p>
+                        <ul class="green-caret-list exp-list ps-0">
+                            <li class="fade-in-up" style="animation-delay: 0s;">Conducted vulnerability assessments and penetration Conducted vulnerability assessments and penetration testing on internal systems to identify security weaknesses.</li>
+                            <li class="fade-in-up" style="animation-delay: 0.2s;">Assisted in the development and implementation of security protocols and best practices.</li>
+                            <li class="fade-in-up" style="animation-delay: 0.4s;">Collaborated with IT teams to enhance the overall cybersecurity posture of the organization.</li>
+                        </ul>
+                        <a class="icon-link icon-link-hover gallery-link" data-bs-toggle="modal" data-bs-target="#galleryModal-defense">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-camera" viewBox="0 0 16 16">
+                                <path d="M15 12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h1.172a3 3 0 0 0 2.12-.879l.83-.828A1 1 0 0 1 6.827 3h2.344a1 1 0 0 1 .707.293l.828.828A3 3 0 0 0 12.828 5H14a1 1 0 0 1 1 1zM2 4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-1.172a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 9.172 2H6.828a2 2 0 0 0-1.414.586l-.828.828A2 2 0 0 1 3.172 4z"/>
+                                <path d="M8 11a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5m0 1a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7M3 6.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0"/>
+                            </svg>
+                            Gallery
+                        </a>
+                    </div>
+                    <div class="tab-pane fade" id="list-lisa" role="tabpanel">
+                        <h3>Master Thesis @ <a href="https://lisa.polytech.ulb.be" class="green exp-title-link" target="_blank">Laboratory of Image Synthesis & Analysis - ULB</a></h3>
+                        <p class="">JAN 2021 - JUN 2021</p>
+                        <ul class="green-caret-list exp-list ps-0">
+                            <li class="fade-in-up" style="animation-delay: 0s;">Assisted in the analysis of high-throughput sequencing data to identify genetic variants associated with specific phenotypes.</li>
+                            <li class="fade-in-up" style="animation-delay: 0.2s;">Utilized bioinformatics tools and programming languages such as Python and R for data processing and visualization.</li>
+                            <li class="fade-in-up" style="animation-delay: 0.4s;">Contributed to the preparation of research reports and presentations for academic dissemination.</li>
+                        </ul>
+                        <a class="icon-link icon-link-hover gallery-link me-3" data-bs-toggle="modal" data-bs-target="#modal-lisa">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-camera-reels" viewBox="0 0 16 16">
+                                <path d="M6 3a3 3 0 1 1-6 0 3 3 0 0 1 6 0M1 3a2 2 0 1 0 4 0 2 2 0 0 0-4 0"/>
+                                <path d="M9 6h.5a2 2 0 0 1 1.983 1.738l3.11-1.382A1 1 0 0 1 16 7.269v7.462a1 1 0 0 1-1.406.913l-3.111-1.382A2 2 0 0 1 9.5 16H2a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2zm6 8.73V7.27l-3.5 1.555v4.35zM1 8v6a1 1 0 0 0 1 1h7.5a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1"/>
+                                <path d="M9 6a3 3 0 1 0 0-6 3 3 0 0 0 0 6M7 3a2 2 0 1 1 4 0 2 2 0 0 1-4 0"/>
+                            </svg>
+                            Presentation
+                        </a>
+                        <a class="icon-link icon-link-hover gallery-link" data-bs-toggle="modal" data-bs-target="#modal-lisa-report">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clipboard-check" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M10.854 7.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 9.793l2.646-2.647a.5.5 0 0 1 .708 0"/>
+                                <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1z"/>
+                                <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0z"/>
+                            </svg>
+                            Report
+                        </a>
+                    </div>
+                    <div class="tab-pane fade" id="list-chu" role="tabpanel">
+                        <h3>Genomics Intern @ <a href="https://www.chuliege.be/jcms/c2_16986339/fr/genetique/accueil" class="green exp-title-link" target="_blank">CHU Liege</a></h3>
+                        <p class="">JAN 2021 - APR 2021</p>
+                        <ul class="green-caret-list exp-list ps-0">
+                            <li class="fade-in-up" style="animation-delay: 0s;">Assisted in the development of machine learning models for medical image analysis using Python and TensorFlow.</li>
+                            <li class="fade-in-up" style="animation-delay: 0.2s;">Processed and annotated large datasets of medical images to support research initiatives.</li>
+                            <li class="fade-in-up" style="animation-delay: 0.4s;">Collaborated with radiologists and researchers to validate model performance and improve diagnostic accuracy.</li>
+                        </ul>
+                        <a class="icon-link icon-link-hover gallery-link me-3" data-bs-toggle="modal" data-bs-target="#modal-chu">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-camera-reels" viewBox="0 0 16 16">
+                                <path d="M6 3a3 3 0 1 1-6 0 3 3 0 0 1 6 0M1 3a2 2 0 1 0 4 0 2 2 0 0 0-4 0"/>
+                                <path d="M9 6h.5a2 2 0 0 1 1.983 1.738l3.11-1.382A1 1 0 0 1 16 7.269v7.462a1 1 0 0 1-1.406.913l-3.111-1.382A2 2 0 0 1 9.5 16H2a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2zm6 8.73V7.27l-3.5 1.555v4.35zM1 8v6a1 1 0 0 0 1 1h7.5a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1"/>
+                                <path d="M9 6a3 3 0 1 0 0-6 3 3 0 0 0 0 6M7 3a2 2 0 1 1 4 0 2 2 0 0 1-4 0"/>
+                            </svg>
+                            Presentation
+                        </a>
+                        <a class="icon-link icon-link-hover gallery-link" data-bs-toggle="modal" data-bs-target="#modal-chu-report">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clipboard-check" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M10.854 7.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 9.793l2.646-2.647a.5.5 0 0 1 .708 0"/>
+                                <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1z"/>
+                                <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0z"/>
+                            </svg>
+                            Report
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Studies -->
+        <div id="projects" class="mt-5 mb-end-section">
+            <div class="d-flex align-items-center gap-3 mb-4">
+                <h2>/ qualifications</h2>
+                <hr class="w-25">
+            </div>
+            <div class="d-md-flex gap-5">
+                <div class="list-group list-exp" id="list-tab-stu" role="tablist">
+                    <a class="list-group-item list-group-item-action active"data-bs-toggle="list" href="#list-cisco" role="tab" aria-controls="list-cisco">CCST</a>
+                    <a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-master" role="tab" aria-controls="list-master">MASTER</a>
+                    <a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-bachelier" role="tab" aria-controls="list-bachelier">BACHELOR</a>
+                    <div id="indicator-stu" class="indicator"></div>
+                </div>
+                <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="list-cisco" role="tabpanel">
+                        <h3>Junior Cybersecurity Analyst Career Path @ <a href="https://www.netacad.com/career-paths/cybersecurity" class="green exp-title-link" target="_blank">CISCO Networking Academy</a></h3>
+                        <p class="">JAN 2024 - JAN 2025</p>
+                        <p class="full-width">
+                            The Junior Cybersecurity Analyst Career Path is designed to equip individuals with the foundational skills and knowledge required to pursue a career in cybersecurity. This comprehensive program covers essential topics such as network security, threat management, and incident response. Students will gain hands-on experience through practical labs and real-world scenarios, preparing them for entry-level roles in the cybersecurity field.
+                        </p>
+                        <ul class="green-caret-list ps-0">
+                            <li class="fade-in-up" style="animation-delay: 0s;">Introduction to Cybersecurity</li>
+                            <li class="fade-in-up" style="animation-delay: 0.2s;">Networking Basics</li>
+                            <li class="fade-in-up" style="animation-delay: 0.4s;">Networking Devices and Initial Configuration</li>
+                            <li class="fade-in-up" style="animation-delay: 0.6s;">Endpoint Security</li>
+                            <li class="fade-in-up" style="animation-delay: 0.8s;">Network Defense</li>
+                            <li class="fade-in-up" style="animation-delay: 1.0s;">Cyber Threat Management</li>
+                        </ul>
+                        <a class="icon-link icon-link-hover gallery-link fade-in-up" href="#" data-bs-toggle="modal" data-bs-target="#modal-cisco" style="animation-delay: 1.2s;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-journal-bookmark-fill" viewBox="0 0 16 16">
+                                <path d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917zM8 8.46 1.758 5.965 8 3.052l6.242 2.913z"/>
+                                <path d="M4.176 9.032a.5.5 0 0 0-.656.327l-.5 1.7a.5.5 0 0 0 .294.605l4.5 1.8a.5.5 0 0 0 .372 0l4.5-1.8a.5.5 0 0 0 .294-.605l-.5-1.7a.5.5 0 0 0-.656-.327L8 10.466zm-.068 1.873.22-.748 3.496 1.311a.5.5 0 0 0 .352 0l3.496-1.311.22.748L8 12.46z"/>
+                            </svg>
+                            Diploma
+                        </a>
+                    </div>
+                    <div class="tab-pane fade" id="list-master" role="tabpanel">
+                        <h3>Bioinformatics & Modelling @ <a href="https://www.ulb.be/fr/programme/ma-binf-1" class="green exp-title-link" target="_blank">ULB</a></h3>
+                        <p class="">SEPT 2019 - JUN 2021</p>
+                        <p class="full-width">
+                            The Master's in Bioinformatics and Modelling is a multidisciplinary program that combines biology, computer science, mathematics, and statistics to analyze and interpret biological data. The curriculum covers topics such as genomics, proteomics, systems biology, machine learning, and computational modeling. Students gain hands-on experience with bioinformatics tools and techniques, preparing them for careers in research, healthcare, and biotechnology.
+                        </p>
+                        <div class="collapse" id="collapse-master">
+                            <ul class="green-caret-list exp-list ps-0">
+                                <li class="fade-in-up lecture w-100 d-inline-block" style="animation-delay: 0.0s;"><span class="lecture-id">INFO-F-101</span>Programmation<span class="float-end note">19/20</span></li>
+                                <li class="fade-in-up lecture w-100 d-inline-block" style="animation-delay: 0.1s;"><span class="lecture-id">BINF-F-402</span>Genomics, proteomics, evolution<span class="float-end note">13/20</span></li>
+                                <li class="fade-in-up lecture w-100 d-inline-block" style="animation-delay: 0.2s;"><span class="lecture-id">BINF-F-401</span>Computational Methods for Functional Genomics<span class="float-end note">14.5/20</span></li>
+                                <li class="fade-in-up lecture w-100 d-inline-block" style="animation-delay: 0.3s;"><span class="lecture-id">BINF-F-404</span>Modeling dynamical systems in biology<span class="float-end note">11/20</span></li>
+                                <li class="fade-in-up lecture w-100 d-inline-block" style="animation-delay: 0.4s;"><span class="lecture-id">BINF-F-403</span>Biophysics and structural bioinformatics I<span class="float-end note">10/20</span></li>
+                                <li class="fade-in-up lecture w-100 d-inline-block" style="animation-delay: 0.5s;"><span class="lecture-id">BINF-F-405</span>Biophysics and structural bioinformatics II<span class="float-end note">13/20</span></li>
+                                <li class="fade-in-up lecture w-100 d-inline-block" style="animation-delay: 0.6s;"><span class="lecture-id">BING-F-4002</span>Acquisition et analyse de données<span class="float-end note">13/20</span></li>
+                                <li class="fade-in-up lecture w-100 d-inline-block" style="animation-delay: 0.7s;"><span class="lecture-id">CHIM-F-422</span>Modélisation des rythmes du vivant<span class="float-end note">15/20</span></li>
+                                <li class="fade-in-up lecture w-100 d-inline-block" style="animation-delay: 0.8s;"><span class="lecture-id">INFO-F-438</span>Algorithms in computational biology<span class="float-end note">16.5/20</span></li>
+                                <li class="fade-in-up lecture w-100 d-inline-block" style="animation-delay: 0.9s;"><span class="lecture-id">INFO-F-422</span>Statistical foundations of machine learning<span class="float-end note">17/20</span></li>
+                                <li class="fade-in-up lecture w-100 d-inline-block" style="animation-delay: 1.0s;"><span class="lecture-id">INFO-F-434</span>Biological databases and analysis of macromolecular sequences<span class="float-end note">17.5/20</span></li>
+                                <li class="fade-in-up lecture w-100 d-inline-block" style="animation-delay: 1.1s;"><span class="lecture-id">INFO-F-409</span>Learning dynamics<span class="float-end note">15/20</span></li>
+                                <li class="fade-in-up lecture w-100 d-inline-block" style="animation-delay: 1.2s;"><span class="lecture-id">INFO-H-400</span>Medical Information Systems<span class="float-end note">16/20</span></li>
+                                <li class="fade-in-up lecture w-100 d-inline-block" style="animation-delay: 1.3s;"><span class="lecture-id">INFO-H-410</span>Techniques of artificial intelligence<span class="float-end note">14/20</span></li>
+                                <li class="fade-in-up lecture w-100 d-inline-block" style="animation-delay: 1.4s;"><span class="lecture-id">INFO-H-500</span>Image acquisition and processing<span class="float-end note">18/20</span></li>
+                                <li class="fade-in-up lecture w-100 d-inline-block" style="animation-delay: 1.5s;"><span class="lecture-id">INFO-H-515</span>Big Data : Distributed Data Management and Scalable Analytics<span class="float-end note">18/20</span></li>
+                                <li class="fade-in-up lecture w-100 d-inline-block" style="animation-delay: 1.6s;"><span class="lecture-id">INFO-F-527</span>Internship (academic or industrial environment)<span class="float-end note">16/20</span></li>
+                                <li class="fade-in-up lecture w-100 d-inline-block" style="animation-delay: 1.7s;"><span class="lecture-id">MEMO-F-518</span>Master thesis<span class="float-end note">17/20</span></li>
+                            </ul>
+                        </div>
+                        <a class="icon-link icon-link-hover gallery-link me-3" id="collapse-master-link" href="#collapse-master" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapse-master">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down collapse-arrow" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1"/>
+                            </svg>
+                            <span class="collapse-link-text">Lectures & grades</span>
+                        </a>
+                        <a class="icon-link icon-link-hover gallery-link" href="#" data-bs-toggle="modal" data-bs-target="#modal-master">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-mortarboard" viewBox="0 0 16 16">
+                                <path d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917zM8 8.46 1.758 5.965 8 3.052l6.242 2.913z"/>
+                                <path d="M4.176 9.032a.5.5 0 0 0-.656.327l-.5 1.7a.5.5 0 0 0 .294.605l4.5 1.8a.5.5 0 0 0 .372 0l4.5-1.8a.5.5 0 0 0 .294-.605l-.5-1.7a.5.5 0 0 0-.656-.327L8 10.466zm-.068 1.873.22-.748 3.496 1.311a.5.5 0 0 0 .352 0l3.496-1.311.22.748L8 12.46z"/>
+                            </svg>
+                            Diploma
+                        </a>
+                    </div>
+                    <div class="tab-pane fade" id="list-bachelier" role="tabpanel">
+                        <h3>Medicine @ <a href="https://www.programmes.uliege.be/cocoon/20252026/formations/bref/M1MEDE01.html" class="green exp-title-link" target="_blank">Uliege</a></h3>
+                        <p class="">SEP 2016 - JUN 2019</p>
+                        <p class="full-width">
+                            The Bachelor's in Medicine is a comprehensive program that provides students with a solid foundation in medical sciences and clinical practice. The curriculum covers subjects such as anatomy, physiology, biochemistry, pathology, pharmacology, and clinical skills. Students gain hands-on experience through clinical rotations and internships, preparing them for further specialization in various medical fields.
+                        </p>
+                        <div class="collapse" id="collapse-bac">
+                            <ul class="green-caret-list exp-list ps-0">
+                                <li class="fade-in-up lecture w-100 d-inline-block" style="animation-delay: 0.1s;"><span class="lecture-id">BIOL2026-2</span>General biology<span class="float-end note">12.94/20</span></li>
+                                <li class="fade-in-up lecture w-100 d-inline-block" style="animation-delay: 0.2s;"><span class="lecture-id">CHIM9263-1</span>Chemistry preparing to medicine<span class="float-end note">11.32/20</span></li>
+                                <li class="fade-in-up lecture w-100 d-inline-block" style="animation-delay: 0.3s;"><span class="lecture-id">PHYS3018-1</span>Physical bases for medicine<span class="float-end note">14.49/20</span></li>
+                                <li class="fade-in-up lecture w-100 d-inline-block" style="animation-delay: 0.4s;"><span class="lecture-id">APPR0331-1</span>Training in transdisciplinary approaches to medical problems<span class="float-end note">14/20</span></li>
+                                <li class="fade-in-up lecture w-100 d-inline-block" style="animation-delay: 0.5s;"><span class="lecture-id">URGC0111-1</span>First aid<span class="float-end note">19.84/20</span></li>
+                                <li class="fade-in-up lecture w-100 d-inline-block" style="animation-delay: 0.6s;"><span class="lecture-id">BIOC9238-1</span>General biochemistry<span class="float-end note">9/20</span></li>
+                                <li class="fade-in-up lecture w-100 d-inline-block" style="animation-delay: 0.7s;"><span class="lecture-id">PHYL0645-1</span>General physiology<span class="float-end note">11.83/20</span></li>
+                                <li class="fade-in-up lecture w-100 d-inline-block" style="animation-delay: 0.8s;"><span class="lecture-id">ANAT0224-1</span>Introduction to human anatomy<span class="float-end note">12.17/20</span></li>
+                                <li class="fade-in-up lecture w-100 d-inline-block" style="animation-delay: 0.9s;"><span class="lecture-id">HISL0541-1</span>General histology<span class="float-end note">12.67/20</span></li>
+                                <li class="fade-in-up lecture w-100 d-inline-block" style="animation-delay: 1.0s;"><span class="lecture-id">LANG2940-1</span>English for medical sciences<span class="float-end note">15.09/20</span></li>
+                                <li class="fade-in-up lecture w-100 d-inline-block" style="animation-delay: 1.1s;"><span class="lecture-id">SANT0110-2</span>Psycho-social Dimensions of Health<span class="float-end note">14.61/20</span></li>
+                                <li class="fade-in-up lecture w-100 d-inline-block" style="animation-delay: 1.2s;"><span class="lecture-id">EPID0110-3</span>Basis of Epidemiology<span class="float-end note">16.22/20</span></li>
+                                
+                                <li class="fade-in-up lecture w-100 d-inline-block" style="animation-delay: 1.3s;"><span class="lecture-id">NEUR0431-1</span>Introduction to neurophysiology<span class="float-end note">11/20</span></li>
+                                <li class="fade-in-up lecture w-100 d-inline-block" style="animation-delay: 1.4s;"><span class="lecture-id">IMMU0121-5</span>General Immunology<span class="float-end note">11.06/20</span></li>
+                                <li class="fade-in-up lecture w-100 d-inline-block" style="animation-delay: 1.5s;"><span class="lecture-id">MICR1714-1</span>General microbiology<span class="float-end note">11.37/20</span></li>
+                                <li class="fade-in-up lecture w-100 d-inline-block" style="animation-delay: 1.6s;"><span class="lecture-id">SBIM0489-1</span>General virology<span class="float-end note">11.04/20</span></li>
+                                <li class="fade-in-up lecture w-100 d-inline-block" style="animation-delay: 1.7s;"><span class="lecture-id">LANG0071-1</span>Advanced English for medical sciences<span class="float-end note">12.02/20</span></li>
+                                <li class="fade-in-up lecture w-100 d-inline-block" style="animation-delay: 1.8s;"><span class="lecture-id">ANAP0120-3</span>General pathological anatomy<span class="float-end note">12.35/20</span></li>
+                                <li class="fade-in-up lecture w-100 d-inline-block" style="animation-delay: 1.9s;"><span class="lecture-id">GENE0121-2</span>Special medical genetics<span class="float-end note">10.28/20</span></li>
+                                <li class="fade-in-up lecture w-100 d-inline-block" style="animation-delay: 2.0s;"><span class="lecture-id">RESP0120-6</span>Multidisciplinary approach to the respiratory system<span class="float-end note">13.6/20</span></li>
+                                <li class="fade-in-up lecture w-100 d-inline-block" style="animation-delay: 2.1s;"><span class="lecture-id">REIN0120-7</span>Multidisciplinary approach to the nephrology and urinary system<span class="float-end note">13.81/20</span></li>
+                                <li class="fade-in-up lecture w-100 d-inline-block" style="animation-delay: 2.2s;"><span class="lecture-id">DERM0121-5</span>Multidisciplinary approach to the cutaneous system<span class="float-end note">11.33/20</span></li>
+                                <li class="fade-in-up lecture w-100 d-inline-block" style="animation-delay: 2.3s;"><span class="lecture-id">DIGT0120-1</span>Multidisciplinary approach to the digestive system<span class="float-end note">11.75/20</span></li>
+                                <li class="fade-in-up lecture w-100 d-inline-block" style="animation-delay: 2.4s;"><span class="lecture-id">PHYL0121-1</span>Multidisciplinary approach of metabolic and endocrin system<span class="float-end note">10.46/20</span></li>
+                                <li class="fade-in-up lecture w-100 d-inline-block" style="animation-delay: 2.5s;"><span class="lecture-id">SEXL0120-1</span>Multidisciplinary approach to the genital system<span class="float-end note">10.73/20</span></li>
+                                <li class="fade-in-up lecture w-100 d-inline-block" style="animation-delay: 2.6s;"><span class="lecture-id">APPR0141-1</span>Techniques of multidisciplinary training per problem of the digestive, genital, metabolic and endocrinal systems<span class="float-end note">12/20</span></li>
+                                <li class="fade-in-up lecture w-100 d-inline-block" style="animation-delay: 2.7s;"><span class="lecture-id">MEDE0124-1</span>Practical work of the digestive, genital and endocrine systems<span class="float-end note">13.94/20</span></li>
+                                <li class="fade-in-up lecture w-100 d-inline-block" style="animation-delay: 2.8s;"><span class="lecture-id">MEDE0125-1</span>Practical work of the digestive, genital, cutaneous, metabolic and endocrine systems<span class="float-end note">16/20</span></li>
+                                <li class="fade-in-up lecture w-100 d-inline-block" style="animation-delay: 2.9s;"><span class="lecture-id">APPR0122-4 </span>Problem-based multidisciplinary learning technique<span class="float-end note">14/20</span></li>
+                                <li class="fade-in-up lecture w-100 d-inline-block" style="animation-delay: 3.0s;"><span class="lecture-id">MEDE0122-1</span>Practical work in anatomy<span class="float-end note">13.33/20</span></li>
+                                <li class="fade-in-up lecture w-100 d-inline-block" style="animation-delay: 3.1s;"><span class="lecture-id">MEDE0123-1 </span>Practical histology<span class="float-end note">10.32/20</span></li>
+                            
+                                <li class="fade-in-up lecture w-100 d-inline-block" style="animation-delay: 0.1s;"><span class="lecture-id">IMMU0121-5</span>General Immunology<span class="float-end note">11.06/20</span></li>
+                                <li class="fade-in-up lecture w-100 d-inline-block" style="animation-delay: 0.1s;"><span class="lecture-id">IMMU0121-5</span>General Immunology<span class="float-end note">11.06/20</span></li>
+                                <li class="fade-in-up lecture w-100 d-inline-block" style="animation-delay: 0.1s;"><span class="lecture-id">IMMU0121-5</span>General Immunology<span class="float-end note">11.06/20</span></li>
+                                <li class="fade-in-up lecture w-100 d-inline-block" style="animation-delay: 0.1s;"><span class="lecture-id">IMMU0121-5</span>General Immunology<span class="float-end note">11.06/20</span></li>
+                                <li class="fade-in-up lecture w-100 d-inline-block" style="animation-delay: 0.1s;"><span class="lecture-id">IMMU0121-5</span>General Immunology<span class="float-end note">11.06/20</span></li>
+                                <li class="fade-in-up lecture w-100 d-inline-block" style="animation-delay: 0.1s;"><span class="lecture-id">IMMU0121-5</span>General Immunology<span class="float-end note">11.06/20</span></li>
+                                <li class="fade-in-up lecture w-100 d-inline-block" style="animation-delay: 0.1s;"><span class="lecture-id">IMMU0121-5</span>General Immunology<span class="float-end note">11.06/20</span></li>
+                                <li class="fade-in-up lecture w-100 d-inline-block" style="animation-delay: 0.1s;"><span class="lecture-id">IMMU0121-5</span>General Immunology<span class="float-end note">11.06/20</span></li>
+                                <li class="fade-in-up lecture w-100 d-inline-block" style="animation-delay: 0.1s;"><span class="lecture-id">IMMU0121-5</span>General Immunology<span class="float-end note">11.06/20</span></li>
+                                <li class="fade-in-up lecture w-100 d-inline-block" style="animation-delay: 0.1s;"><span class="lecture-id">IMMU0121-5</span>General Immunology<span class="float-end note">11.06/20</span></li>
+                                <li class="fade-in-up lecture w-100 d-inline-block" style="animation-delay: 0.1s;"><span class="lecture-id">IMMU0121-5</span>General Immunology<span class="float-end note">11.06/20</span></li>
+                                <li class="fade-in-up lecture w-100 d-inline-block" style="animation-delay: 0.1s;"><span class="lecture-id">IMMU0121-5</span>General Immunology<span class="float-end note">11.06/20</span></li>
+                                <li class="fade-in-up lecture w-100 d-inline-block" style="animation-delay: 0.1s;"><span class="lecture-id">IMMU0121-5</span>General Immunology<span class="float-end note">11.06/20</span></li>
+                                <li class="fade-in-up lecture w-100 d-inline-block" style="animation-delay: 0.1s;"><span class="lecture-id">IMMU0121-5</span>General Immunology<span class="float-end note">11.06/20</span></li>
+                                <li class="fade-in-up lecture w-100 d-inline-block" style="animation-delay: 0.1s;"><span class="lecture-id">IMMU0121-5</span>General Immunology<span class="float-end note">11.06/20</span></li>
+                                <li class="fade-in-up lecture w-100 d-inline-block" style="animation-delay: 0.1s;"><span class="lecture-id">IMMU0121-5</span>General Immunology<span class="float-end note">11.06/20</span></li>
+                                <li class="fade-in-up lecture w-100 d-inline-block" style="animation-delay: 0.1s;"><span class="lecture-id">IMMU0121-5</span>General Immunology<span class="float-end note">11.06/20</span></li>
+                                <li class="fade-in-up lecture w-100 d-inline-block" style="animation-delay: 0.1s;"><span class="lecture-id">IMMU0121-5</span>General Immunology<span class="float-end note">11.06/20</span></li>
+                                <li class="fade-in-up lecture w-100 d-inline-block" style="animation-delay: 0.1s;"><span class="lecture-id">IMMU0121-5</span>General Immunology<span class="float-end note">11.06/20</span></li>
+                                <li class="fade-in-up lecture w-100 d-inline-block" style="animation-delay: 0.1s;"><span class="lecture-id">IMMU0121-5</span>General Immunology<span class="float-end note">11.06/20</span></li>
+                            </ul>
+                        </div>
+                        <a class="icon-link icon-link-hover gallery-link me-3" id="collapse-bac-link" href="#collapse-bac" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapse-bac">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down collapse-arrow" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1"/>
+                            </svg>
+                            <span class="collapse-link-text">Lectures & grades</span>
+                        </a>
+                        <a class="icon-link icon-link-hover gallery-link" href="#" data-bs-toggle="modal" data-bs-target="#modal-bac">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-mortarboard" viewBox="0 0 16 16">
+                                <path d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917zM8 8.46 1.758 5.965 8 3.052l6.242 2.913z"/>
+                                <path d="M4.176 9.032a.5.5 0 0 0-.656.327l-.5 1.7a.5.5 0 0 0 .294.605l4.5 1.8a.5.5 0 0 0 .372 0l4.5-1.8a.5.5 0 0 0 .294-.605l-.5-1.7a.5.5 0 0 0-.656-.327L8 10.466zm-.068 1.873.22-.748 3.496 1.311a.5.5 0 0 0 .352 0l3.496-1.311.22.748L8 12.46z"/>
+                            </svg>
+                            Diploma
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <!-- Projects -->
-        <div id="projects" class="mt-5 mb-end-section">
-            <div class="d-flex align-items-center gap-3">
-                <h2>/ projects</h2>
-                <hr class="w-25">
-            </div>
-            <p>In progress ...</p>
-        </div>
-
-        <!-- Contact -->
         <div id="contact" class="mt-5 mb-end-section">
             <div class="d-flex align-items-center gap-3">
-                <h2>/ contact</h2>
+                <h2>/ projects</h2>
                 <hr class="w-25">
             </div>
             <p>In progress ...</p>
@@ -141,16 +383,95 @@
         <small>Click home to <span class="green">enter the matrix</span></small>
     </footer>
 
+    <div class="modal fade" id="galleryModal-defense" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content bg-transparent border-0">
+                <div class="modal-body p-0 position-relative">
+                    <div id="carouselGallery" class="carousel carousel-fade" data-bs-interval="false">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active text-center"><img src="assets/img/CySS1.jpg" class="gallery-img"></div>
+                            <div class="carousel-item text-center"><img src="assets/img/CySS2.jpg" class="gallery-img"></div>
+                            <div class="carousel-item text-center"><img src="assets/img/CySS3.jpg" class="gallery-img"></div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselGallery" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselGallery" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                        <button type="button" class="btn-close red position-absolute" style="top:10px; right:10px; z-index:10;" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal-lisa" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content bg-transparent border-0">
+                <div class="modal-body p-0 position-relative">
+                    <embed src="assets/pdf/thesis_slides.pdf" frameborder="0" class="pdf-embed">
+                    <button type="button" class="btn-close red position-absolute" style="top:10px; right:10px; z-index:10;" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal-chu" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content bg-transparent border-0">
+                <div class="modal-body p-0 position-relative">
+                    <embed src="assets/pdf/internship_slides.pdf" frameborder="0" class="pdf-embed">
+                    <button type="button" class="btn-close red position-absolute" style="top:10px; right:10px; z-index:10;" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal-cisco" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content bg-transparent border-0">
+                <div class="modal-body p-0 position-relative">
+                    <img src="assets/img/diploma_CISCO.png" class="gallery-img">
+                    <button type="button" class="btn-close red position-absolute" style="top:10px; right:10px; z-index:10;" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal-master" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content bg-transparent border-0">
+                <div class="modal-body p-0 position-relative">
+                    <img src="assets/img/diploma_master.png" class="gallery-img">
+                    <button type="button" class="btn-close red position-absolute" style="top:10px; right:10px; z-index:10;" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal-bac" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content bg-transparent border-0">
+                <div class="modal-body p-0 position-relative">
+                    <img src="assets/img/diploma_master.png" class="gallery-img">
+                    <button type="button" class="btn-close red position-absolute" style="top:10px; right:10px; z-index:10;" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <style>@import url(https://fonts.googleapis.com/css2?family=Space+Mono&display=swap);</style>
     <style>@import url(https://fonts.googleapis.com/css2?family=NTR&display=swap);</style>
-    <style>@import url(https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap);</style>">
+    <style>@import url(https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap);</style>
     <script src="assets/js/global.js"></script>
 
     <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>AOS.init();</script>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
 </body>
