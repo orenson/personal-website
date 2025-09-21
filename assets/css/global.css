@@ -31,12 +31,6 @@ nav {
     background-color: var(--navy);
 }
 
-@media (max-width: 768px) {
-  nav {
-    border-bottom: var(--slate) 1px solid;
-  }
-}
-
 a.navbar-brand {
     color: var(--lightest-slate);
     /* font-family: monospace; */
@@ -143,6 +137,10 @@ i.hi-icon {
   padding-left: 1.2em;
 }
 
+.green-caret-list li:hover {
+  color: var(--light-slate);
+}
+
 .green-caret-list li::before {
   content: "\f234";
   font-family: "bootstrap-icons"; 
@@ -153,17 +151,21 @@ i.hi-icon {
   top: 0;
 }
 
+.year-list {
+  list-style: none;
+  padding-left: 0;
+}
+
 .lecture-id {
     display: inline-block;
-    min-width: 150px;
+    min-width: 120px;
     font-family: 'Courier Prime', monospace;
     font-size: 16px;
 }
 
-.lecture:hover {
+/* .lecture:hover {
   color: var(--green-bright);
-    /* background-color: var(--lightest-navy); */
-}
+} */
 
 .about-image {
     text-align: center;

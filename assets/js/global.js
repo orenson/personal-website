@@ -249,7 +249,38 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 
   collapseBac.addEventListener('hide.bs.collapse', () => {
-    linkTextBac.textContent = 'Expand';
+    linkTextBac.textContent = 'Lectures & grades';
+  });
+
+
+    document.querySelectorAll(".modal").forEach(modal => {
+      modal.addEventListener("shown.bs.modal", function () {
+          const carouselElement = modal.querySelector(".carousel");
+          if (!carouselElement) return;
+
+          const carousel = new bootstrap.Carousel(carouselElement, { interval: false });
+
+          function handleKeydown(e) {
+              switch (e.key) {
+                  case "ArrowLeft":
+                      carousel.prev();
+                      break;
+                  case "ArrowRight":
+                      carousel.next();
+                      break;
+                  case "Escape":
+                      bootstrap.Modal.getInstance(modal).hide();
+                      break;
+              }
+          }
+
+          document.addEventListener("keydown", handleKeydown);
+
+          // Cleanup when modal closes
+          modal.addEventListener("hidden.bs.modal", function () {
+              document.removeEventListener("keydown", handleKeydown);
+          }, { once: true });
+      });
   });
 
 });
