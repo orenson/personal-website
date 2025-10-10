@@ -1,2 +1,4 @@
 User-agent: *
+Disallow: /assets/img/
 Allow: /
+Sitemap: https://olivierrenson.be/sitemap.xml
